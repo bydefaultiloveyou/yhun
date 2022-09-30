@@ -31,7 +31,7 @@ const Youtube = async (
       body : `\nTitle : ${video.title}\nUrl : ${video.url}\nAuthor : ${video.author.name}\nViews : ${video.views}\nUpload Date : ${video.uploadDate}`,
       title : "* Information Videos 🚀 *",
       button : [
-        {id : `mp3 ${video.title}`,body : "!yt mp3"},
+        {id : `mp3 ${video.title}`,body : "🎶 mp3"},
       ]
     }
 

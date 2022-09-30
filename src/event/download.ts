@@ -10,21 +10,21 @@ export const Mp3Download = async (
 ) => {
 
   console.log(id)
-  // client.sendMessage(msg.from, "Downloading song .....")
+  client.sendMessage(msg.from, "Downloading song .....")
 
-  // const video = GetVideoByID(id)
+  const video = GetVideoByID(id)
   
-  // try {
+  try {
 
-  //   const path : string = `public/song/${(await video).title}.mp3` 
-  //   if ( !fs.existsSync(path) ) await ytdl((await video).url, { filter: "audioonly"}).pipe(fs.createWriteStream(path)).addListener("finish", function() {
-  //     client.sendMessage(msg.from, "download finish")
-  //   })
+    const path : string = `public/song/${(await video).title}.mp3` 
+    if ( !fs.existsSync(path) ) await ytdl((await video).url, { filter: "audioonly"}).pipe(fs.createWriteStream(path)).addListener("finish", function() {
+      client.sendMessage(msg.from, "download finish")
+    })
 
-  // } catch {
+  } catch {
 
-  //   client.sendMessage(msg.from, "downlod error")
+    client.sendMessage(msg.from, "downlod error")
 
-  // }
+  }
 
 }

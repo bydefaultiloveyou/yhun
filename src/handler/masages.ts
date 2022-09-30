@@ -26,7 +26,7 @@ const MessagesHanlder = async (
   if ( command[0] === "!yt" ) Youtube(idYoutube, message)
 
   /** download audio if client send message 'mp3' */
-  if ( message.body === "mp3" ) Mp3Download(message)
+  if ( message.body === "🎶 mp3" ) Mp3Download(message)
 
 } 
 
