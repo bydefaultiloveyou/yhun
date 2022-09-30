@@ -5,7 +5,10 @@ import { ReadyHandler } from "./handler/ready"
 
 export const client : WAWebJS.Client = new Client({
   authStrategy: new LocalAuth(),
-  puppeteer : { headless : true }
+  puppeteer : {
+    headless: true,
+    args : ["--no-sanbox"]
+  }
 })
 
 client.on("message", MessagesHanlder)
