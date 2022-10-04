@@ -7,13 +7,12 @@ export const client : WAWebJS.Client = new Client({
   authStrategy: new LocalAuth(),
   puppeteer : {
     headless: true,
-    args : ["--no-sanbox"]
+    args : ['--no-sandbox']
   }
 })
 
 client.on("message", MessagesHanlder)
 client.on("qr", QrHandler)
 client.on("ready", ReadyHandler)
-
 
 client.initialize()
