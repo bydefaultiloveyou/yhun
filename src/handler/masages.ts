@@ -19,14 +19,15 @@ const MessagesHanlder = async (
   const command : string[] = message.body.split(" ")
 
   if ( command[0] === "!yt" ) {
+    /** get id video */
     const idYoutube : string | null = getVideoId(command[1]).id
 
     /** check info youtube video */
     Youtube(idYoutube, message)    
   }
   
-  if ( command[0] === "!sticker" && message.type === "image" ) Sticker(message)
   // /** jika commandnya sticker buat */
+  if ( command[0] === "!sticker" && message.type === "image" ) Sticker(message)
 
   // /** download audio if client send message 'mp3' */
   if ( message.body === "🎶 mp3" ) Mp3Download(message)

@@ -16,10 +16,10 @@ const Sticker = async (
 					stickerAuthor : "yhun"
 			}).then(() => client.sendMessage(msg.from, "nah udah bilang apa?"))
   
-		} catch {
-	
+		}
+		
+		catch {
 			client.sendMessage(msg.from, "blm bisa kntl!!")
-	
 		}
 }       
 
