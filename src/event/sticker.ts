@@ -5,7 +5,7 @@ const Sticker = async (
     msg : Message 
 ) => {
 
-    client.sendMessage(msg.from, "buat stiker ke? tunggu ye!")
+    client.sendMessage(msg.from, "Buat sticker ya monyet?")
 	
 		try {
 
@@ -16,9 +16,7 @@ const Sticker = async (
 					stickerAuthor : "yhun"
 			}).then(() => client.sendMessage(msg.from, "nah udah bilang apa?"))
   
-		}
-		
-		catch {
+		} catch {
 			client.sendMessage(msg.from, "blm bisa kntl!!")
 		}
 }       
