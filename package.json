@@ -14,9 +14,6 @@
     "type": "git",
     "url": "github.com/bijakbercoli/hyun"
   },
-  "engines": {
-    "node": "16.17.1"
-  },
   "author": "Miko Meysa Bima",
   "license": "ISC",
   "dependencies": {
